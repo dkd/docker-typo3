@@ -3,7 +3,7 @@ typo3:
   links: 
    - db
   ports:
-   - "81:80"
+   - "80:80"
   environment:
     DB_NAME: typo3
     DB_USER: admin
