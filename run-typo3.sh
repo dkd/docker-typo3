@@ -1,7 +1,5 @@
 #!/bin/bash
 
-chown www-data:www-data /app -R
-
 DB_HOST=${DB_PORT_3306_TCP_ADDR:-${DB_HOST}}
 DB_HOST=${DB_1_PORT_3306_TCP_ADDR:-${DB_HOST}}
 DB_PORT=${DB_PORT_3306_TCP_PORT:-${DB_PORT}}
@@ -69,4 +67,7 @@ if [ ! -f /app/typo3conf/LocalConfiguration.php ]
             --admin-user-name="admin" \
             --admin-password="password" \
             --site-name="TYPO3 Demo Installation"
+
+        echo "Set permissions for /app folder ..."
+        chown www-data:www-data -R /app/fileadmin /app/typo3temp /app/uploads
 fi
