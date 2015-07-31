@@ -5,6 +5,10 @@
     },
     "authors": [
         {
+            "name": "Johannes Goslar",
+            "email": "johannes.goslar@dkd.de"
+        },
+        {
             "name": "Sascha Egerer",
             "email": "sascha.egerer@dkd.de"
         }
@@ -16,7 +20,7 @@
         }
     ],
     "require": {
-        "typo3/cms": "~6.2.12",
+        "typo3/cms": "~6.2.14",
         "typo3-ter/typo3-console": "*"
     },
     "extra": {
