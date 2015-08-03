@@ -6,8 +6,8 @@ ADD apt-source-costamagnagianfranco_ettercap-stable-backports /etc/apt/sources.l
 
 # Install packages
 RUN apt-get update && \
-  apt-get -yq --force-yes install mysql-client git curl && \
-  rm -rf /var/lib/apt/lists/*
+apt-get -yq --force-yes install mysql-client git curl imagemagick php5-imagick && \
+rm -rf /var/lib/apt/lists/*
 
 RUN a2enmod rewrite
 ADD typo3.conf /etc/apache2/sites-enabled/000-default.conf
