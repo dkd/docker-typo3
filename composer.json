@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "typo3/cms": "~6.2.14",
+        "typo3/cms": "~6.2.15",
         "typo3-ter/typo3-console": "*"
     },
     "extra": {
