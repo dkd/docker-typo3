@@ -71,3 +71,7 @@ if [ ! -f /app/typo3conf/LocalConfiguration.php ]
         echo "Set permissions for /app folder ..."
         chown www-data:www-data -R /app/fileadmin /app/typo3temp /app/uploads
 fi
+
+# Start apache in foreground
+/run.sh
+

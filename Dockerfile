@@ -39,4 +39,4 @@ ENV INSTALL_TOOL_PASSWORD password
 ENV TYPO3_COMPOSER_AUTOLOAD 1
 
 EXPOSE 80
-CMD ["/bin/bash", "-c", "/run-typo3.sh && /run.sh"]
+CMD ["/bin/bash", "-c", "/run-typo3.sh"]
