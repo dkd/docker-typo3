@@ -20,11 +20,11 @@
         }
     ],
     "require": {
-        "typo3/cms": "~6.2.15",
+        "typo3/cms": "^7.6",
         "typo3-ter/typo3-console": "*"
     },
     "extra": {
-        "class-alias-maps": [
+        "typo3/class-alias-loader": [
             "typo3_src/typo3/sysext/about/Migrations/Code/ClassAliasMap.php",
             "typo3_src/typo3/sysext/aboutmodules/Migrations/Code/ClassAliasMap.php",
             "typo3_src/typo3/sysext/filelist/Migrations/Code/ClassAliasMap.php",
