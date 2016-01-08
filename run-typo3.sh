@@ -72,6 +72,8 @@ if [ ! -f /app/typo3conf/LocalConfiguration.php ]
         chown www-data:www-data -R /app/fileadmin /app/typo3temp /app/uploads
 fi
 
-# Start apache in foreground
-/run.sh
-
+# Start apache in foreground if no arguments are given
+if [ $# -eq 0 ]
+then
+    /run.sh
+fi
