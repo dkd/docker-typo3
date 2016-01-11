@@ -22,35 +22,5 @@
     "require": {
         "typo3/cms": "^7.6",
         "typo3-ter/typo3-console": "*"
-    },
-    "extra": {
-        "typo3/class-alias-loader": [
-            "typo3_src/typo3/sysext/about/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/aboutmodules/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/filelist/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/form/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/impexp/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/rsaauth/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/rtehtmlarea/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/sysnote/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/t3editor/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/t3skin/Migrations/Code/ClassAliasMap.php",
-            "typo3_src/typo3/sysext/css_styled_content/Migrations/Code/ClassAliasMap.php"
-        ]
-    },
-    "autoload": {
-        "psr-4": {
-            "TYPO3\\CMS\\About\\": "typo3_src/typo3/sysext/about/Classes/",
-            "TYPO3\\CMS\\Aboutmodules\\": "typo3_src/typo3/sysext/aboutmodules/Classes/",
-            "TYPO3\\CMS\\Filelist\\": "typo3_src/typo3/sysext/filelist/Classes/",
-            "TYPO3\\CMS\\Form\\": "typo3_src/typo3/sysext/form/Classes/",
-            "TYPO3\\CMS\\Impexp\\": "typo3_src/typo3/sysext/impexp/Classes/",
-            "TYPO3\\CMS\\Rsaauth\\": "typo3_src/typo3/sysext/rsaauth/Classes/",
-            "TYPO3\\CMS\\Rtehtmlarea\\": "typo3_src/typo3/sysext/rtehtmlarea/Classes/",
-            "TYPO3\\CMS\\SysNote\\": "typo3_src/typo3/sysext/sys_note/Classes/",
-            "TYPO3\\CMS\\T3editor\\": "typo3_src/typo3/sysext/t3editor/Classes/",
-            "TYPO3\\CMS\\T3skin\\": "typo3_src/typo3/sysext/t3skin/Classes/",
-            "TYPO3\\CMS\\CssStyledContent\\": "typo3/sysext/css_styled_content/Classes/"
-        }
     }
 }
