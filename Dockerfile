@@ -19,10 +19,6 @@ ADD typo3.php.ini /etc/php5/conf.d/
 RUN rm -fr /app && mkdir /app
 VOLUME ["/app/typo3temp", "/app/uploads", "/app/fileadmin"]
 
-ADD AdditionalConfiguration.php /app/typo3conf/
-ADD composer.json /app/
-RUN composer install && cp typo3conf/ext/typo3_console/Scripts/typo3cms .
-
 # Add script to create 'typo3' DB
 ADD run-typo3.sh /run-typo3.sh
 RUN chmod 755 /*.sh
@@ -35,8 +31,10 @@ ENV DB_USER admin
 ENV DB_PASS **ChangeMe**
 ENV INSTALL_TOOL_PASSWORD password
 
-# Enable composer autoloader in TYPO3
-ENV TYPO3_COMPOSER_AUTOLOAD 1
-
 EXPOSE 80
 CMD ["/bin/bash", "-c", "/run-typo3.sh"]
+
+ADD AdditionalConfiguration.php /app/typo3conf/
+RUN composer config -g github-oauth.github.com fe8d7ff34d10ead6008732b4cac0c75c1e98e414
+ADD composer.json /app/
+RUN composer install && cp typo3conf/ext/typo3_console/Scripts/typo3cms .

@@ -17,10 +17,14 @@
         {
             "type": "composer",
             "url": "http://composer.typo3.org/"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/helhum/typo3_console.git"
         }
     ],
     "require": {
         "typo3/cms": "^7.6",
-        "typo3-ter/typo3-console": "*"
+        "helhum/typo3-console": "dev-master"
     }
 }
