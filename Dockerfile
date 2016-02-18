@@ -15,9 +15,8 @@ ADD typo3.conf /etc/apache2/sites-enabled/000-default.conf
 # Adjust some php settings
 ADD typo3.php.ini /etc/php5/conf.d/
 
-# Install dependencies defined in composer.json
 RUN rm -fr /app && mkdir /app
-VOLUME ["/app/typo3temp", "/app/uploads", "/app/fileadmin"]
+VOLUME [ "/app/uploads", "/app/fileadmin"]
 
 # Add script to create 'typo3' DB
 ADD run-typo3.sh /run-typo3.sh
@@ -35,6 +34,7 @@ EXPOSE 80
 CMD ["/bin/bash", "-c", "/run-typo3.sh"]
 
 ADD AdditionalConfiguration.php /app/typo3conf/
-RUN composer config -g github-oauth.github.com fe8d7ff34d10ead6008732b4cac0c75c1e98e414
+
+# Install dependencies defined in composer.json
 ADD composer.json /app/
 RUN composer install && cp typo3conf/ext/typo3_console/Scripts/typo3cms .
