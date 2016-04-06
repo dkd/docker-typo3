@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "692c4750d09643e274a4207b361e8f1b",
+    "hash": "8f270eccf470989bbf3a8cb0fef03d2a",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -113,33 +113,32 @@
         },
         {
             "name": "helhum/typo3-console",
-            "version": "dev-master",
+            "version": "1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/helhum/typo3_console.git",
-                "reference": "d098c6cc67fcf1c39e568581979f369cc2475a58"
+                "reference": "8ff8d101d06c9099c65cb3e5f95cb51b3f2ce984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/typo3_console/zipball/d098c6cc67fcf1c39e568581979f369cc2475a58",
-                "reference": "d098c6cc67fcf1c39e568581979f369cc2475a58",
+                "url": "https://api.github.com/repos/helhum/typo3_console/zipball/8ff8d101d06c9099c65cb3e5f95cb51b3f2ce984",
+                "reference": "8ff8d101d06c9099c65cb3e5f95cb51b3f2ce984",
                 "shasum": ""
             },
             "require": {
                 "ext-phar": "*",
-                "php": ">=5.5.0",
-                "symfony/console": ">=2.7 || <3.1",
-                "symfony/process": ">=2.7 || <3.1",
-                "typo3/cms-core": "^7.6 || ^8.0"
+                "symfony/console": ">=2.7|<3.1",
+                "symfony/process": ">=2.7|<3.1",
+                "typo3/cms-core": "^7.6|^8.0"
             },
             "replace": {
                 "typo3-ter/typo3-console": "self.version",
                 "typo3_console": "self.version"
             },
             "require-dev": {
-                "mikey179/vfsstream": "~1.6.0",
+                "mikey179/vfsstream": "1.4.*@dev",
                 "namelesscoder/typo3-repository-client": "1.1.x-dev",
-                "phpunit/phpunit": "~4.8.0"
+                "phpunit/phpunit": "~4.7.0"
             },
             "type": "typo3-cms-extension",
             "extra": {
@@ -191,10 +190,10 @@
                 "console"
             ],
             "support": {
-                "source": "https://github.com/helhum/typo3_console/tree/master",
+                "source": "https://github.com/helhum/typo3_console/tree/1.2.7",
                 "issues": "https://github.com/helhum/typo3_console/issues"
             },
-            "time": "2016-04-01 10:24:04"
+            "time": "2016-03-11 11:40:19"
         },
         {
             "name": "mso/idna-convert",
@@ -1035,9 +1034,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "helhum/typo3-console": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

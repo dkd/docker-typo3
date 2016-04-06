@@ -25,6 +25,6 @@
     ],
     "require": {
         "typo3/cms": "^7.6",
-        "helhum/typo3-console": "dev-master"
+        "helhum/typo3-console": "~1.2.7"
     }
 }
