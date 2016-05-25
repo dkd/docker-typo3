@@ -7,10 +7,6 @@
         {
             "name": "Johannes Goslar",
             "email": "johannes.goslar@dkd.de"
-        },
-        {
-            "name": "Sascha Egerer",
-            "email": "sascha.egerer@dkd.de"
         }
     ],
     "repositories": [
@@ -26,5 +22,37 @@
     "require": {
         "typo3/cms": "^7.6",
         "helhum/typo3-console": "~1.2.7"
+    },
+    "extra": {
+        "helhum/typo3-console": {
+            "active-packages": [
+                "about",
+                "aboutmodules",
+                "belog",
+                "beuser",
+                "context_help",
+                "css_styled_content",
+                "documentation",
+                "extra_page_cm_options",
+                "filelist",
+                "filemetadata",
+                "func",
+                "impexp",
+                "info",
+                "info_pagetsconfig",
+                "lowlevel",
+                "opendocs",
+                "perm",
+                "reports",
+                "rsaauth",
+                "rtehtmlarea",
+                "scheduler",
+                "setup",
+                "tstemplate",
+                "viewpage",
+                "news",
+                "form"
+            ]
+        }
     }
 }

@@ -10,6 +10,8 @@ typo3:
     DB_PASS: "**ChangeMe**"
     DB_HOST: "db"
     DB_PORT: "3306"
+    ENABLE_XDEBUG: "**True**"
+
 db:
   image: tutum/mysql:5.5
   environment:
